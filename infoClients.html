@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400;500&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial,  sans-serif;
+        }
+        body{
+            font-family: 'Poppins', sans-serif;
+            background-color: #fdf7f9;
+            color: #5c3d5b;
+        }
+      .hero-section {
+        background: url(contactpage.jpeg)
+          center center fixed no-repeat;
+        background-size: cover;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 40px;
+      }
+      .form-info{
+       text-align: center;
+       max-width: 200px;
+       width: 500px;
+       flex: 1;
+        padding-right: 40px;
+       
+
+      }
+      input,textarea{
+        padding: 5px;
+        background-color:rgba(245, 245, 220, 0.692);
+        width: 400px;
+
+      }
+      textarea{
+        height: 100px;
+        resize: none;
+      }
+      button{
+        border-radius: 10px;
+        background-color: brown;
+        border: none;
+        cursor: pointer;
+        color: white;
+        width: 150px;
+      }
+      .container{
+        /*
+        display: flex;
+        gap: 50px;
+        justify-content: space-around;
+        background-color: white;
+
+
+        align-items: start;
+        max-width: 1100px;
+        margin: auto;
+        padding: 40px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        */
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 50px auto;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+
+        width: 90%;
+        border-radius: 10px;
+
+      
+       
+       }
+       .Write, .Offices{
+        flex: 1;
+        width: 48%;
+       }
+       .Write h3, .Offices h3{
+        font-family: 'Playfair Display', serif;
+        color: #a44a72;
+        margin-bottom: 10px;
+       }
+       
+      .Write{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+       /* clip-path: fill-box;
+        min-inline-size:fit-content;
+        width: 200px;*/
+        
+       }
+       ul{
+        list-style: none;
+        padding: 0;
+       }
+       .form-info{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+       }
+       svg{
+        color: burlywood;
+        width: 20px;
+        height: 20px;
+        
+        
+        
+    
+       }
+    li{
+        display: flex;
+        gap: 15px;
+        align-items: start;
+        margin-bottom: 50px;
+           
+
+       }
+       
+      .Para>h3{
+        position: absolute;
+        bottom: 40px;
+        margin-top: 0;
+        padding: 0;
+        height: fit-content;
+        font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+       
+        
+       
+
+      }
+      h5{
+        font-size: 14px;
+        font-weight: bold;
+        margin: 0;
+      }
+      p{
+        font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+      }
+      .form-info2{
+        display: flex;
+        gap:200px;
+       
+
+        
+      }
+      .Offices{
+        width: 850px;
+        flex: 1;
+            padding-left: 40px;
+        border-left: 1px solid #eaeaea;
+       
+      }h2{
+        text-align: center;
+        font-size: xx-large;
+       
+      }
+      #Contact hr{
+        width: 50px;
+        display: flex;
+        align-items: center;
+      
+       
+        
+       
+      }
+
+      
+       
+      
+      
+      
+     
+
+       
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <div class="hero-section">
+      <h2>Contactez-nous</h2>
+    </div>
+    <h2>Information sur le clients</h2>
+    <section>
+    <div id="Contact">
+         <div class="container">  
+                
+                    <div class="Write">
+                        <div class="info1">
+                            <h3>Write Us</h3><hr>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, quo corporis, autem nam voluptates incidunt optio omnis inventore ex error et illo odit est modi quod animi mollitia assumenda. Quidem!</p>
+                        </div>
+                    
+                            <form action=""  class="form-info">
+                                <input type="text" name="" id="" placeholder="Nom">
+                                <input type="email" name="" id="" placeholder="Email">
+                                <textarea name="" id="" placeholder="Message"></textarea>
+                                <button type="submit">Envoyer</button>
+                            </form>
+            
+                
+                    </div> 
+
+             <div class="Offices">
+                            <div class="info">
+                            <h3>Offices</h3><hr>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, error necessitatibus possimus reprehenderit, minus asperiores explicabo eligendi saepe ad commodi fugit ipsa ex dolor itaque incidunt consequatur! Fuga, dignissimos nulla?</p>
+                            </div>
+
+                            <div class="form-info2">
+                                
+                                    <div class="part1">
+                                        <ul>
+                                    <li>
+                                        
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                                            </svg>
+                                            <div class="Para">
+                                                <h5> Addresse</h5>
+                                                <p>263 st.San francisco<br> 480 st.san New york</p>
+
+                                            </div>
+                                        
+                                    </li>
+                                    
+                                    <li> 
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                                            </svg>
+
+                                                <div class="Para">
+                                                    <h5> Email</h5>
+                                                    <p>info@company.com<br>job@company.com</p>
+                                                </div>
+                                    
+                                    </li>
+                                    
+                                    <li>
+                                        
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                                            </svg>
+                                            <div class="Para">
+                                                <h5>Telephone</h5>
+                                                <p>+2773812780948<br>+1(438)864-7528</p>
+                                            </div>
+                                    </li>
+                                    </ul>
+                                    </div>
+                                    <div class="part2">
+                                        <ul>
+                                        <li>
+                                        
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                                            </svg>
+                                            <div class="Para">
+                                                <h5> Addresse</h5>
+                                                <p>263 st.San francisco<br> 480 st.san New york</p>
+                                            </div>
+                                        </li>
+                                    
+                                        <li> 
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                                            </svg>
+
+                                            <div class="Para">
+                                                <h5> Email</h5>
+                                                <p>info@company.com<br>job@company.com</p>
+                                            </div>
+                                        </li>
+                                
+                                        <li>
+                                        
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                                            </svg>
+
+                                            <div class="Para">
+                                                <h5>  Telephone</h5>
+                                                <p>+2773812780948<br>+1(438)864-7528</p>
+                                            </div>
+                                        </li>
+                                </ul>
+                            
+                         </div>
+                    </div>
+             </div>
+        </div>
+    </section>
+  </body>
+</html>

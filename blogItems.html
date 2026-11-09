@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body{
+            padding: 0;
+            margin: 0;
+        }
+      #info {
+        display: flex;
+        gap: 5px;
+        text-align: center;
+      }
+      #info > div {
+        border-right: 2px solid rgb(120, 120, 120);
+        padding-right: 5px;
+        padding-left: 5px;
+        color: rgb(101, 98, 98);
+        height: 15px;
+        display: flex;
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+      #info > :nth-last-child(1) {
+        border-style: none;
+      }
+      a {
+        text-decoration: none;
+        display: flex;
+        gap: 0;
+        color: black;
+        align-items: stretch;
+      }
+      a > label {
+        padding: 11px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5px;
+        border: 2px solid black;
+        background-color: black;
+        color:white;
+      }
+
+      a [type="button"] {
+        background-color: rgb(219, 78, 232);
+        color:black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      a [type="button"]:hover {
+        background-color:black ;
+        color: white;
+        cursor: pointer;
+      }
+      a>input{
+        width: 150px;
+        border: 2px solid black;
+      }
+      p{
+        font-family;
+      }
+      #principale{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        margin: 10px;
+       
+
+      }
+      img{
+        background-size: cover;
+        justify-items: center;
+        display: flex;
+        height: 400px;
+       
+        
+      }
+      table,tr,td{
+        border-bottom:1px solid black ;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        color: gray;
+        text-transform: capitalize;
+        font-size: 15px;
+      }
+      table{
+        border-collapse: collapse;
+
+      }
+      td{
+        padding-top: 10px;
+        width: 50px;
+      }
+      table,tbody{
+        width: 150px;
+      }
+      #recherche{
+        display: flex;
+        gap: 0px;
+      }
+      input[type=Search] {
+        border-right: 0px;
+        outline-color: orange;
+      }
+
+      #recherche>label{
+      
+        border: 2px solid black;
+        border-left: 0px;
+        background-color: rgb(202, 99, 162);
+        color: white;
+      
+      }
+      .container{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+
+       
+       
+      }
+
+      .two{
+        padding: 14px;
+      }
+
+        #principale{
+            flex: 3 1 0;
+        }
+       
+
+
+    </style>
+  </head>
+  <body>
+    
+    <header>
+        
+    </header>
+
+    <div class="container">
+        <div class="desc">
+            <div id="principale">
+                <img src="https://i.pinimg.com/474x/a1/2d/c4/a12dc4a1422a705c547abbc67365d2ae.jpg">
+            </div>
+            <div class="description">
+                <h2>1. Comprendre vos besoins et votre budget</h2>
+                <p>Évaluation des besoins : Discutez de l'importance de définir ce que vous recherchez dans une maison (taille, emplacement, type de propriété).
+                    Établissement d'un budget : Expliquez comment calculer ce que vous pouvez vous permettre, en tenant compte de vos revenus, de vos dettes et de vos économies.</p>
+            </div>
+            <div>
+                <h2>2. Comprendre vos besoins et votre budget</h2>
+                <p>Évaluation des besoins : Discutez de l'importance de définir ce que vous recherchez dans une maison (taille, emplacement, type de propriété).
+                    Établissement d'un budget : Expliquez comment calculer ce que vous pouvez vous permettre, en tenant compte de vos revenus, de vos dettes et de vos économies.</p>
+            </div>
+            <div>
+                <h2>3. Comprendre vos besoins et votre budget</h2>
+                <p>Évaluation des besoins : Discutez de l'importance de définir ce que vous recherchez dans une maison (taille, emplacement, type de propriété).
+                    Établissement d'un budget : Expliquez comment calculer ce que vous pouvez vous permettre, en tenant compte de vos revenus, de vos dettes et de vos économies.</p>
+            </div>
+            <div>
+                <h2>4. Comprendre vos besoins et votre budget</h2>
+                <p>Évaluation des besoins : Discutez de l'importance de définir ce que vous recherchez dans une maison (taille, emplacement, type de propriété).
+                    Établissement d'un budget : Expliquez comment calculer ce que vous pouvez vous permettre, en tenant compte de vos revenus, de vos dettes et de vos économies.</p>
+            </div>
+            <div>
+                <h2>1. Comprendre vos besoins et votre budget</h2>
+                <p>Évaluation des besoins : Discutez de l'importance de définir ce que vous recherchez dans une maison (taille, emplacement, type de propriété).
+                    Établissement d'un budget : Expliquez comment calculer ce que vous pouvez vous permettre, en tenant compte de vos revenus, de vos dettes et de vos économies.</p>
+            </div>
+        </div>
+            
+    
+        
+
+            <div class="two">
+            <div id="recherche">
+            <input type="search" name="" id="" placeholder="Rechercher">
+            <label for=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search-heart" viewBox="0 0 16 16">
+                <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018"/>
+                <path d="M13 6.5a6.47 6.47 0 0 1-1.258 3.844q.06.044.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11"/>
+            </svg></label>
+                </div>
+
+
+            <h4>CATEGORIES</h4>
+            <ul style="list-style-type: none;padding: 0;">
+                <table>
+                    <tbody>
+                    <tr>
+                <td><li>tous<span>(52)</span></li></td> 
+                </tr>
+                <tr>
+                    <td><li>tous<span>(52)</span></li></td>
+                </tr>
+            </tr>
+                    <td> <li>tous<span>(52)</span></li></td>
+                </tr>
+                <tr>
+                    <td> <li>tous<span>(52)</span></li></td>
+                </tr>
+            </tbody>
+                </table>
+            </ul>
+            <h4>RECENT POST</h4>
+            <ul style="list-style-type: none;padding: 0;">
+                <table>
+                    <tbody>
+                    <tr>
+                <td><li>tous<span>(52)</span></li></td> 
+                </tr>
+                <tr>
+                    <td><li>tous<span>(52)</span></li></td>
+                </tr>
+            </tr>
+                    <td> <li>tous<span>(52)</span></li></td>
+                </tr>
+                <tr>
+                    <td> <li>tous<span>(52)</span></li></td>
+                </tr>
+            </tbody>
+                </table>
+            </ul>
+            <h5>RECENT IMAGE</h5>
+         <ul style="list-style-type: none;padding: 0;">
+                <table>
+                    <tbody>
+                    <tr>
+                <td><li>tous<span>(52)</span></li></td> 
+                </tr>
+                <tr>
+                    <td><li>tous<span>(52)</span></li></td>
+                </tr>
+            </tr>
+                    <td> <li>tous<span>(52)</span></li></td>
+                </tr>
+                <tr>
+                    <td> <li>tous<span>(52)</span></li></td>
+                </tr>
+            </tbody>
+                </table>
+            </ul>
+            
+            
+        </div>
+        
+    </div>
+</body>
+</html>

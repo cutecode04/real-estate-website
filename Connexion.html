@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion & Inscription</title>
+    <style>
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper {
+    background-color: white;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    padding: 40px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.tab {
+    padding: 12px;
+    background-color: #F4F4F4;
+    border: none;
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 6px 6px 0 0;
+    transition: background-color 0.3s ease;
+}
+
+.tab.active {
+    background-color: palevioletred;
+    color: white;
+}
+
+.form-content .form {
+    display: none;
+}
+
+.form-content .form.active {
+    display: block;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #DDD;
+    border-radius: 8px;
+    background-color: #F9F9F9;
+    transition: border 0.3s ease;
+}
+
+.input-group input:focus {
+    border: 1px solid palevioletred;
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background-color: palevioletred;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color:palevioletred;
+}
+
+.link-switch {
+    text-align: center;
+    font-size: 14px;
+}
+
+.link-switch a {
+    color: palevioletred;
+    text-decoration: none;
+}
+
+.link-switch a:hover {
+    text-decoration: underline;
+}
+
+.social-login {
+    margin-top: 30px;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form-container">
+            <div class="tabs">
+                <button class="tab active" id="connexion-tab">Connexion</button>
+                <button class="tab" id="inscription-tab">Inscription</button>
+            </div>
+            <div class="form-content">
+                <form id="connexion-form" action="#" method="POST" class="form active">
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Mot de passe</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn">Se connecter</button>
+                    <p class="link-switch">Pas encore de compte ? <a href="#">Inscrivez-vous</a></p>
+                </form>
+
+                <form id="inscription-form" action="#" method="POST" class="form">
+                    <div class="input-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email_inscription">Email</label>
+                        <input type="email" id="email_inscription" name="email_inscription" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password_inscription">Mot de passe</label>
+                        <input type="password" id="password_inscription" name="password_inscription" required>
+                    </div>
+                    <button type="submit" class="btn">S'inscrire</button>
+                    <p class="link-switch">Déjà un compte ? <a href="#">Connectez-vous</a></p>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('connexion-tab').addEventListener('click', function() {
+            document.getElementById('connexion-form').classList.add('active');
+            document.getElementById('inscription-form').classList.remove('active');
+            document.getElementById('connexion-tab').classList.add('active');
+            document.getElementById('inscription-tab').classList.remove('active');
+        });
+        
+        document.getElementById('inscription-tab').addEventListener('click', function() {
+            document.getElementById('inscription-form').classList.add('active');
+            document.getElementById('connexion-form').classList.remove('active');
+            document.getElementById('inscription-tab').classList.add('active');
+            document.getElementById('connexion-tab').classList.remove('active');
+        });
+    </script>
+</body>
+</html>
